@@ -1,0 +1,95 @@
+.palavras-configuracoes {
+    margin-left: 5vmin;
+    margin-bottom: 2vmin;
+}
+/*Tela de Acessibilidade*/
+#botao-voltar-acessibilidade{
+    border: 0;
+    background-color: transparent;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 2.5vh;
+    outline-width: 1px;
+    text-wrap: nowrap;
+    margin-left: 2vmin;
+  }
+
+  #section-opcao-tamanho-texto {
+    margin-left: 5vmin;
+    padding: 2vmin;
+    background-color: #e7e8ed;
+    width: 90%;
+    border-radius: 10px;
+    div {
+        padding: 2vmin;
+    }
+    img {
+        width: 4vmax;
+    }
+    h2 {
+        font-size: 6vmin;
+    }
+    
+  }
+.botoes-tela-acessibilidade {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    font-size: 6vmin;
+}
+/*Tela de Ajuda*/
+#label-reportar-problema {
+    font-size: 4vmin;
+}
+#input-tela-ajuda {
+    width: 20%;
+    border-radius: 1vmin;
+}
+#div-input-tela-ajuda {
+    text-align: center;
+}
+#textarea-tela-ajuda {
+    border-radius: 2vmin;
+    width: 98%;
+    height: 10vmin;
+    padding: 1vmin;
+}
+/*Tela Sobre*/
+#body-tela-sobre {
+    background-color: #023859;
+    color: white;
+}
+
+#botao-voltar-sobre{
+    border: 0;
+    background-color: transparent;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 2.5vh;
+    outline-width: 1px;
+    text-wrap: nowrap;
+    margin-left: 2vmin;
+    color: white;
+}
+#div-mensagem-sobre {
+    margin-left: 2vmin;
+    p {
+        margin-left: 3vmin;
+    }
+}
+#texto-sobre {
+    font-size: 3vmin;
+    width: 95%;
+}
+#hr-tela-sobre {
+    color: white;
+    margin-left: 5vmin;
+    margin-right: 5vmin;
+}
+#footer-tela-sobre {
+    img {
+        width: 90%;
+    }
+}

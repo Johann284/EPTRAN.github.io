@@ -1,0 +1,453 @@
+* {
+  box-sizing: border-box;
+  font-family: "Teachers", sans-serif;
+}
+
+/*-----------------NÍVEIS DE ENSINO-----------------*/
+
+.secao-niveis-de-ensino {
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #000000b7;
+  overflow: hidden;
+}
+
+.selecionar-nivel-de-ensino {
+  width: 80%;
+  height: 90%;
+  max-width: 400px;
+  margin-inline: auto;
+  margin-top: 6vh;
+}
+
+.tres-niveis-de-ensino {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3vh;
+
+  a {
+    text-decoration: none;
+    width: 100%;
+    height: 10%;
+    background-color: #ffffff;
+    text-align: center;
+    align-content: center;
+    border-radius: 50px;
+    color: black;
+    font-weight: 600;
+    font-size: 2vh;
+  }
+}
+
+.tres-niveis-de-ensino :nth-child(1) {
+  box-shadow: #52d898 8px 10px;
+}
+
+.tres-niveis-de-ensino :nth-child(2) {
+  box-shadow: #ffe01d 8px 10px;
+}
+
+.tres-niveis-de-ensino :nth-child(3) {
+  box-shadow: #ff3131 8px 10px;
+}
+
+/* ------------------- CONTA --------------------*/
+
+#nav-botao-configuracoes {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  width: 100vw;
+  height: 8vh;
+  img {
+    width: auto;
+    height: 3.8vh;
+    margin-right: 25px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.9vh;
+}
+
+#div-botao-editar-perfil {
+  text-align: center;
+  width: 100vw;
+}
+
+#div-foto-de-perfil-conta {
+  height: 10vh;
+  margin: 15px auto;
+  position: relative;
+}
+
+#img-foto-de-perfil-conta {
+  width: auto;
+  height: 10.2vh;
+  margin: 0px auto;
+  clip-path: circle(50%);
+  border-radius: 100%;
+}
+
+#icone-edicao-foto-perfil {
+  height: 2.4vh;
+  width: auto;
+  position: absolute;
+  left: 100%;
+  top: 100%;
+  transform: translate(-100%, -100%);
+}
+
+#botao-editar-perfil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30vw;
+  max-width: 400px;
+  min-width: 100px;
+  height: 4vh;
+  margin-inline: auto;
+  background-color: #023859;
+  text-decoration: none;
+  border-radius: 50px;
+  margin-top: 20px;
+  box-shadow: rgb(74, 74, 74) 0px 20px 30px -10px;
+
+  color: white;
+  font-size: 2.2vh;
+  font-weight: 600;
+  letter-spacing: 6%;
+
+  img {
+    height: 2.4vh;
+    width: auto;
+    margin-right: 4%;
+  }
+
+  div {
+    width: 11%;
+  }
+}
+
+#secao-conquistas {
+  background-color: #023859;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  width: 90vw;
+  max-width: 1500px;
+  border-radius: 40px;
+  margin-top: 50px;
+  box-shadow: rgb(74, 74, 74) 0px 20px 30px -10px;
+}
+
+#titulo-secao-conquistas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3vh 6vw;
+  font-size: 1.8vh;
+
+  img {
+    height: 4vh;
+    width: auto;
+  }
+}
+
+#body-secao-conquistas {
+  margin-inline: 6vw;
+  img {
+    height: 4vh;
+    width: auto;
+  }
+}
+
+.topicos-secao-conquista {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 2vh;
+  margin-bottom: 3vh;
+}
+
+#div-visualizar-tudo {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 3vh;
+  svg {
+    height: 2vh;
+    width: auto;
+  }
+}
+
+#button-ver-tudo-conquistas {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 2.2vh;
+  margin-top: 1vh;
+}
+
+/* --------------- EDIÇÃO DADOS PERFIL --------------*/
+
+#fundo-editar-perfil-fechar {
+  display: none;
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #000000b7;
+}
+
+#edicao-de-perfil {
+  position: fixed;
+  bottom: -8%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0;
+  width: 95vw;
+  max-width: 800px;
+  background-color: #023859;
+  z-index: 1;
+  border-radius: 30px;
+  margin-inline: auto;
+  margin-top: 8vh;
+  transition: 0.4s;
+}
+
+.opcoes-edicao-do-perfil,
+#fechar-edicao-perfil-botao {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 2.2vh;
+}
+
+.opcoes-edicao-do-perfil {
+  height: 6vh;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+#fechar-edicao-perfil-botao {
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+  justify-content: center;
+
+  a {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2vh;
+    font-weight: 500;
+    color: #023859;
+    background-color: #ffffff;
+    gap: 1vw;
+    border-radius: 30px;
+    padding: 0.8vh 2vw;
+  }
+}
+
+.linha-branca-divisao {
+  height: 0.2%;
+  width: 90%;
+  margin-inline: auto;
+  background-color: #ffffff;
+  border-radius: 150px;
+}
+
+.margem-esquerda-edicao-perfil {
+  margin-left: 8%;
+}
+
+.margem-direita-edicao-perfil {
+  margin-right: 8%;
+}
+
+/*------------------ FOTO DE PERFIL -----------------*/
+
+#fundo-editar-foto-de-perfil {
+  width: 100vw;
+  height: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+#conteudo-opcoes-foto {
+  width: 80%;
+  height: 100%;
+  max-width: 500px;
+  margin-inline: auto;
+}
+
+.botao-branco {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 2.3vh;
+}
+
+.opcoes-de-foto-perfil {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+
+.imagens-opcoes-para-de-foto-perfil {
+  height: 30%;
+  width: 30%;
+  max-width: 151px;
+}
+
+.avatares {
+  height: 100%;
+  width: 100%;
+  clip-path: circle(50%);
+  border: 3px solid;
+  border-color: #ffffff;
+  border-radius: 100%;
+  /*filter: grayscale(70%);*/ /*Faz a imagem ficar sem cores*/
+  cursor: pointer;
+}
+
+/*----------------- CONFIGURAÇÕES ---------------- */
+
+#container-configuracoes {
+  padding-inline: 5%;
+}
+
+.div-botao-voltar {
+  padding-block: 5%;
+  width: fit-content; /*width se adequa ao conteúdo**/
+}
+
+.botao-voltar {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+  font-size: 2.3vh;
+}
+
+.seta-para-esquerda {
+  height: 2vh;
+  width: auto;
+  margin-right: 8px;
+}
+
+#p-configuracoes {
+  font-size: 2.8vh;
+}
+
+.divs-configuracoes {
+  width: 100%;
+  display: flex;
+  margin-block: 3vh;
+  justify-content: space-between;
+  align-items: center;
+  div {
+    display: flex;
+    width: 80%;
+    align-items: center;
+  }
+  img {
+    margin-right: 2%;
+  }
+}
+
+
+/*----------------- CONQUISTAS ---------------- */
+
+#body-configuracoes_conquista{
+  background-color:#023859 ;
+  color: white;
+}
+
+.seta-para-esquerda-branca {
+  color: white;
+  height: 2vh;
+  width: auto;
+}
+
+.div-botao-voltar-branca{
+  margin-left: 5vmin;
+  padding-block: 5%;
+  width: fit-content; /*width se adequa ao conteúdo**/
+}
+
+.botao-voltar-branca{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 2.3vh;
+}
+
+#div-trofeu{
+  margin-inline: 15vmin;
+  margin-top: 3vmin;
+  display: flex;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+    img{
+      height: 100%;
+      width: 100%;
+      max-width: 20vmin
+    }
+    p{
+      margin-top: 7vmin;
+    }
+    p2{
+      font-size: 4vmin; 
+      margin-top: 8vmin;
+    }
+}
+
+#porcentagem-conquista{
+  P{  
+  font-size: 10vmin;
+  }
+}
+
+#texto-conquistas{
+  text-align: center;
+  font-size: 6vmin;
+}
+
+#conquistas{
+  margin-top: 4vmin;
+}
+
+#total-conquistas-testo{
+  justify-content: space-between;
+  display: flex;
+  background-color: white;
+
+  width:100%;
+  height: 10vmin;
+  p{
+  font-size: 3.5vmin;
+  margin-top: 3vmin;
+  margin-inline: 2vmin;
+  color: black;
+  }
+}

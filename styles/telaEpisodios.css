@@ -1,0 +1,88 @@
+#cabeçalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+#cabeçalho2 {
+  display: flex;
+}
+
+#cabecalho1 {
+  display: flex;
+  margin-top: 1vh;
+}
+
+.boxEpisodios {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  color: #ffffff;
+  border-radius: 12vmin;
+  display: flex;
+  width: 150vmin;
+  height: 35vmin;
+  margin: 4vmin;
+}
+
+.tituloEpisodio {
+  margin-left: 6vmin;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.nomePersonagem {
+  display: block;
+  justify-content: e;
+  align-items: end ;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: black;
+}
+
+.button {
+  line-height: 1.5em;
+  margin-left: 5vmin;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  background-color: transparent;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: rgb(56, 56, 56);
+  transform: scale(1.1) translateY(-3px);
+}
+
+#porta {
+  width: 2vw;
+  height: 2vh;
+}
+
+.personagens {
+  height: 35vmin;
+  margin-left: vmin;
+}
+
+#azul {
+  background-color: #639fdb;
+}
+#amarelo {
+  background-color: #edc414;
+}
+
+#rosa {
+  background-color: #f2a1b0;
+}
+
+#vermelho {
+  background-color: #e43838;
+}

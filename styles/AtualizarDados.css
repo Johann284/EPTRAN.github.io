@@ -1,0 +1,55 @@
+
+label{
+    font-size: 5.5vmin;
+}
+
+#div-botao-comfimar-dados{
+    margin-bottom: 17vmin;
+    button{
+        width: 100%;
+        max-width: 77.5%;
+        font-size: 5vmin;
+        padding: 2vmin;
+        border-radius: 6vmin;
+        background-color:#00bf63;
+        border:none;
+        display: block;
+        margin: auto;
+    }
+}
+
+#div-atualizar-dados{
+    margin-left:9vmin;
+    margin-right:17vmin;
+}
+
+#titulo-atualizar-dados{
+    font-size: 7vmin;
+    margin-bottom: 2vmin;
+}
+
+#subtitulo-atualizar-dados{
+    color: #595959;
+    font-size: 4.3vmin;
+}
+
+#mensagem-atualizar-dados{
+    text-align: center;
+    background-color: #ebf3f9;
+    margin-top: 5vmin;
+    font-size: 4vmin;
+    padding: 3vmin;
+    margin-inline:7vmin;
+    border-radius: 10vmin;
+    margin-bottom: 3vmin;
+}
+
+#div-forms-atualizar{
+    margin-inline: 13vmin;
+    margin-bottom: 23vmin;
+    display: grid;
+    form{
+        margin-bottom: 6vmin;
+    }
+}
+

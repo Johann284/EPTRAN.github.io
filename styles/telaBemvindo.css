@@ -1,0 +1,71 @@
+body {
+  background-color: #a9cafd;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  position: absolute;
+}
+
+#container {
+  display: flex;
+  margin: 3%;
+  align-items: start;
+}
+
+#Sinaleiro {
+  height: 70vmin;
+  margin-left: 2vmin;
+}
+
+#Instrução {
+  text-align: center;
+  color: #bf0101;
+}
+
+#pai {
+  background-color: #fffac3;
+  border-radius: 9vmin;
+  height: auto;
+}
+
+.mae {
+  justify-content: left;
+}
+
+#GD {
+  color: #bf0101;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Flecha {
+  height: 8vmin;
+  background-color: transparent;
+  border: none;
+  border-radius: 30%;
+  margin-bottom: 3.5vmin;
+  margin-right: 1.5vmin;
+}
+
+#BoaSorte {
+  margin-left: 10vmin;
+}
+
+.etapas {
+  display: flex;
+  width: 84%;
+}
+
+.img {
+  height: 5vmin;
+  margin-top: 3vmin;
+  margin-right: 5vmin;
+  margin-left: 5vmin;
+}
+
+button:hover {
+  transform: scale(1.1) translateY(-3px);
+}
+
+h2 {
+  font-size: 0.9em;
+}

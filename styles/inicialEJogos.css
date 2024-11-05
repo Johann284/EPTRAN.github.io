@@ -1,0 +1,430 @@
+/*---------------------- TELA INICIAL -------------------*/
+
+
+#titleSemNoticias{
+  text-align: center;
+  margin-top: 35%;
+}
+
+#imageNoticia{
+  height: 50vmin;
+}
+
+.teste {
+  margin-top: 1vh;
+}
+
+#noticias{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 30px;
+  font-size:large;
+}
+
+h3 {
+  margin-left: 4.4vw;
+  text-align: start;
+}
+
+#addNoticia{
+height: 3vh;
+width: 16vh;
+}
+
+#img {
+  border-radius: 10vmin;
+}
+
+#imageNoticia{
+  margin-top: 2.5vh;
+  display: flex;
+  justify-content: center;
+}
+
+#titleNoticia{
+  margin-top: 1.5vh;
+  text-align:center;
+}
+
+#textNoticia{
+  margin-left: 2vh;
+  color: gray;
+  font-size: smaller;
+}
+
+#optionNoticia{
+  width: 4.5vw;
+}
+#opcaoNoticia{
+  display: flex;
+  justify-content: end;
+}
+
+
+#shareNoticia{
+  overflow: hidden;
+  position: relative;
+  height: 4vh ;
+  width: auto;
+  padding-left: 85vmin;
+  padding-top: -30vmin;
+  }
+
+#adicionar {
+    margin-left: 50vw;
+}
+
+#teste {
+    display: flex;
+}
+
+#buttonOption{
+  display: block;
+  }
+#optionEditar, #optionExcluir, #optionCompartilhar{
+  background-color: black;
+  display: flex;
+  gap: 5px;
+  width: 25vw;
+  height:3vh
+}
+#imgCompartilhar,#imgEditar,#imgExcluir{
+  margin-left: 6px;
+  width: 3vw;
+  height:2vh
+}
+
+#foca-tela-inicial{ 
+  position: relative;
+  display: flex;
+  height:55vmin;
+  bottom: 31vmin;
+  width: auto;
+  max-width: 50%;
+  margin: 1vmin;
+}
+
+#body-tela-inicial {
+  height: 180vh;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Teachers", sans-serif;
+}
+
+#inicio-parte-amarela {
+  background-color: #f2d06b;
+  height: 75vh;
+  padding-top: 8vh;
+}
+
+#div-botoes-jogar{
+  position: absolute;
+}
+
+#frase-educa-transito {
+  background-color: #023859;
+  width: 80%;
+  text-align: center;
+  border-top-right-radius: 50px;
+  padding-block: 1.5vh;
+  padding-inline: 1vh;
+
+  p {
+    font-size: 4vmin;  
+    color: white;
+    font-weight: bold;
+  }
+}
+
+#frase-efeito-inicial {
+  background-color: white;
+  text-align: center;
+  padding-block: 2vh;
+  padding-inline: 3vh;
+
+  p {
+    color: #0eab5f;
+    font-size: 2.5vh;
+  }
+}
+
+#container-imagens-tela-inicial {
+  display: flex;
+  justify-content: center;
+}
+
+#frase-educa-transito{#header-faixa {
+  display: flex;
+}
+img {
+  height: 8vmin;
+  padding-left: 3vmin;
+  padding-top: 5vmin;
+}
+}
+
+#div-imagens-tela-inicial {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-end; 
+  padding: 10; 
+  img {
+    aspect-ratio: 1/1; /* deixa a imagem quadrada, mas ao mesmo tempo distorce ela */
+    object-fit: cover; /* recorta a imagem e evita a distorção que a propriedade anterior causou */
+    border-radius: 50%;
+  }
+}
+
+#carros-circulacao {
+  height: 12vh;
+  position: relative;
+  top: 5vh;
+  left: 20vw;
+}
+
+#placas-transito {
+  margin: 1vmin;
+  height: 18vh;
+  object-position: 0% 50%;
+  position: relative;
+  top: 3vh;
+  right: 15vw;
+}
+
+#vaga-cadeirante {
+  height: 16vh;
+  object-position: 30% 50%;
+  position: relative;
+  bottom: 1vh;
+  left: 18vw;
+}
+
+#section-videos-tela-inicial {
+  width: 100%;
+  h3 {
+    font-size: 5vmin;
+    padding-top: 3%;
+    height: 10vmin;
+    align-items: center;
+  }
+  p {
+    text-align: center;
+    margin: 2vmin;
+    font-size: 5vmin;
+  }
+}
+
+#video-tela-inicial {
+  background-color: #b4f1d4;
+  display: flex;
+  justify-content: center;
+  padding-block: 5%;
+  padding-inline: 10%;
+  video {
+    width: 80%;
+  }
+}
+
+  #video-tela-inicial2{
+    margin-top: 5vmin;
+    background-color: #ed4c4c;
+    display: flex;
+    justify-content: center;
+    padding-block: 5%;
+    padding-inline: 10%;
+    video {
+      width: 80%; 
+  }
+}
+
+#tela-inicial-eptran-logo{
+  width: 100%;
+  max-width: 25vmin;
+  height: auto;  
+}
+
+#reinaldo{
+  height: fit-content;
+  width: fit-content;
+  font-size: 30vmin;
+  margin-bottom: 50vmin;
+  visibility: hidden;
+}
+
+/*---------------------- TELAS DOS NÍVEIS DE ENSINO - JOGAR -------------------*/
+
+#body-telas-jogar {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulos-telas-jogar {
+  font-family: "Teachers", sans-serif;
+  font-size:2vmin;
+  margin-top: 5vmin;
+  margin-bottom: 5vmin;
+  padding:3vmin;
+  height: 100%;
+  max-height: fit-content;
+  width: auto;
+  h3 {
+    font-size: 5vmin;
+  }
+}
+
+#series-iniciais {
+  background-image: linear-gradient(to right, #0eab5f, #78ddac);
+  
+  h3 {
+    color: #f2f2f2;
+  }
+}
+
+#series-finais {
+  background-image: linear-gradient(to right, #f2b807, #f2d06b);
+
+  h3 {
+    color: #000000;
+  }
+}
+
+#ensino-medio {
+  background-image: linear-gradient(to right, #f21d2f, #e25561);
+
+  h3 {
+    color: #f2f2f2;
+  }
+}
+
+.slogan-telas-jogar {
+  padding-block: 2vh;
+  padding-inline: 4vw 6vw;
+  max-width: 50vmin;
+  width: 100%;
+  border-top-right-radius: 5vmin;
+  border-bottom-right-radius: 5vmin;
+
+  p {
+    font-family: "Plus Jakarta Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: large;
+    font-weight: bold;
+    word-spacing: 0.3vw;
+  }
+}
+
+#slogan-series-iniciais {
+  margin-bottom: 30%;
+  background-color: #0eab5f;
+  p {
+    color: #f2f2f2;
+  }
+}
+
+#slogan-series-finais {
+  margin-bottom: 30%;
+  background-color: #f2d06b;
+  p {
+    color: #000000;
+  }
+}
+
+#slogan-ensino-medio {
+  background-color: #e25561;
+  padding: 20px;
+  float: left;
+  margin-bottom: 30%;
+
+  p {
+    font-family: "Plus Jakarta Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: large;
+    color: #f2f2f2;
+    font-weight: bold;
+  }
+}
+
+.jogar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+
+.botao-jogar {
+  position: absolute;
+  font-size: 5vmin;
+  height: 13vmin;
+  width: 30vmin;
+  border: 0vmin;
+  font-weight: bold;
+  font-family: "Plus Jakarta Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+    color: #f2f2f2;
+    border-radius: 13vh;
+}
+
+#botao-jogar-series-iniciais {
+  margin-bottom: 35%;
+  position: absolute;
+  border-radius: 13vh;
+  background-color: #52d898;
+  color: #f2f2f2;
+}
+
+#botao-jogar-series-finais {
+  margin-bottom: 35%;
+  background-color: #f2b807;
+  color: rgb(0, 0, 0);
+}
+
+#botao-jogar-ensino-medio {
+  margin-bottom: 55%;
+  background-color: #f21d2f;
+  color: #f2f2f2;
+}
+
+.imagens-telas-jogar {
+  margin-top: 32vmin;
+  max-height: 80vmin;
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 70vmin;
+    max-height: 70vmin;
+    bottom: 0;
+    margin-bottom: 10vmin;
+  }
+}
+
+
+
+#imagem-series-finais {
+  img{
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 55vmin;
+    max-height: 55vmin;
+  }
+}
+
+#imagem-ensino-medio {
+  flex-direction: row-reverse;
+  align-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  img{
+  right: 0;
+}
+}
+
+#imagem-series-iniciais{
+  img{
+    right: 0; 
+  }
+}

@@ -1,0 +1,362 @@
+* {
+  font-family: "Teachers", sans-serif;
+}
+
+/*--------------------- TELA DE CARREGAMENTO -----------------*/
+
+#body-tela-carregamento {
+  background-color: #023859;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-eptran img {
+  width: 100%;
+  max-width: 850px;
+}
+
+#logo-prefeitura {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  position: absolute;
+  height: 85vh;
+  width: 50vw;
+}
+
+#logo-prefeitura img {
+  width: 60%;
+  max-width: 150px;
+}
+
+/*------------------------ TELA DE LOGIN ---------------------*/
+
+#container {
+  position: relative;
+  top: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 3.5vh;
+}
+
+#h1-login {
+  font-weight: 500;
+  font-size: 3vh;
+}
+
+#form-login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
+  font-size: 2.5vh;
+
+  div {
+    width: 80%;
+  }
+}
+
+.input-login {
+  height: 4.5vh;
+  width: 100%;
+  margin-top: 1.5vh;
+}
+
+#botao-login {
+  width: 83%;
+  margin-left: 10px;
+  margin-top: 3vh;
+
+  button {
+    background-color: #00bf63;
+    height: 5.5vh;
+    border: 0;
+    border-radius: 50px;
+    font-size: 2.5vh;
+    font-weight: 600;
+    width: 100%;
+  }
+}
+
+#ir-para-cadastro {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.3vh;
+
+  a {
+    color: black;
+  }
+}
+
+#ou{
+  h1 {
+    color: rgb(7, 6, 6);
+     position: relative;
+     display: inline-block;
+     margin: 50px 100px;
+     
+ }
+}
+
+/*--------------------- TELAS DE CADASTRO --------------------*/
+
+
+
+#form-tudo{
+  width: 100%;
+  height: 100%;
+}
+
+.botao-voltar {
+  border: 0;
+  background-color: transparent;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 10vw;
+  font-size: 2.5vh;
+  outline-width: 1px;
+  text-wrap: nowrap;
+}
+
+.seta-para-esquerda {
+  width: 25px;
+  height: 15px;
+  margin-right: 8px;
+}
+
+.faca-seu-cadastro {
+  margin-bottom: 50px;
+  margin-left: 10vw;
+}
+
+.paragrafo-informacoes-cadastro {
+  font-size: larger;
+}
+
+.forms-do-cadastro {
+  font-size: 140%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 80vw;
+  label {
+    margin-left: 10px;
+  }
+}
+
+select {
+  border: solid 1px;
+  border-radius: 50px;
+  height: 150%;
+  block-size: 5vh;
+  font-size: 2.5vh;
+  padding-left: 10px;
+}
+
+
+input{
+  border: solid 1px;
+  border-radius: 50px;
+  height: 150%;
+  block-size: 5vh;
+  font-size: 2.5vh;
+  padding-left: 10px;
+}
+
+.divisoes-formulario {
+  display: grid;
+  gap: 10px;
+  width: 80%;
+}
+
+.divisoes-formulario {
+  display: grid;
+  gap: 20px;
+  width: 80%;
+}
+
+
+.divisao-1-formulario {
+  margin-bottom: 19.4vh;
+}
+
+.divisao-2-formulario {
+  margin-bottom: 4vh;
+}
+
+.divisao-3-formulario {
+  margin-bottom: 17.4vh;
+}
+
+.divisao-4-formulario {
+  margin-bottom: 4vh;
+}
+
+.botao-seguinte {
+  text-align: center;
+  background-color: #00bf63;
+  border: 0;
+  border-radius: 50px;
+  height: 5.5vh;
+  font-weight: 600;
+  min-width: 80vw;
+  font-size: 2.6vh;
+}
+
+.div-passos-cadastro {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vmin;
+    gap: 5vmin;
+    div {
+      display: inline-block;
+    }
+}
+#div-opc-estudante {
+  display: flex;
+  accent-color: black;
+  margin-bottom: 5vmin;
+  margin-top: 2vmin;
+}
+
+#estudante-ensino-medio-fundamental{
+  width: 100%;
+}
+
+.bolinha-radio {
+  height: 25px;
+}
+
+#div-requisitos-senha {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content:left;
+  img {
+    width: 10vmin;
+    height: 5vmin;
+  }
+}
+
+
+.campo-guia-cadastro {
+  margin-top: 1vh;
+}
+
+.div-alinhamento-senha {
+  display: flex;
+  gap: 12px;
+}
+
+
+/*Div Boolas*/
+
+#div-bolas{   
+    display: flex;
+    justify-content: center; 
+    justify-content: space-between; 
+    align-items: center;    
+    margin-inline: 20vmin;
+}
+
+#data-nasc-usuario{
+  padding-right: 10px;
+}
+
+.bola-aberta {
+    display:inline-block;
+    border-radius: 50%;
+    height:3vmin;
+    width:3vmin;
+    background-color: black;
+    border: 0.3vmin solid black;
+    border-radius: 50%;
+}
+
+.bola-fechado { 
+    display: inline-block;
+    border: 0.3vmin solid black;
+    border-radius: 50%;
+    height:3vmin;
+    width:3vmin;                     
+    background-color: rgb(255, 255, 255);
+}
+/* Sections da tela de cadastro*/
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+/*================= div-x =================*/
+
+.errado {
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+}
+
+.errado:after {
+  content: "\274c"; 
+  font-size: 15px; 
+  text-align: center;
+}
+
+
+.correto {
+  transform: rotate(45deg);
+  height: 12px;
+  width: 5px;
+  border-bottom: 5px inset green;
+  border-right: 5px inset green;
+}
+
+/*--------------------TELAS DE ALTERAR SENHA-------------------------*/
+
+.classe-do-cadastro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.msg-senha {
+  border-radius: 50px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  height: 11vh;
+  width: 65vw;
+  background-color: #EBF3F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formato-h4 {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.ajuste {
+  margin-top: 2vh;
+}
+
+#email-senha {
+  width: 77.5vw;
+}
+
+#ajuste-h4 {
+  margin-top: 3vh;
+  text-decoration: none;
+}
