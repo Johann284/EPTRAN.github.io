@@ -1,0 +1,63 @@
+/*
+CREATE DATABASE eptran;
+USE eptran;
+
+CREATE TABLE episodios(
+id_episodio INT PRIMARY KEY AUTO_INCREMENT,
+nome_episodio VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE conquistas(
+id_conquista INT PRIMARY KEY AUTO_INCREMENT,
+nome_conquista VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE enderecos(
+id_endereco INT PRIMARY KEY AUTO_INCREMENT,
+cep_endereco VARCHAR(8) NOT NULL,
+estado_endereco VARCHAR(20),
+cidade_endereco VARCHAR(40),
+bairro_endereco VARCHAR(45),
+logradouro_endereco VARCHAR(40)
+);
+
+CREATE TABLE escolas(
+id_escola INT PRIMARY KEY AUTO_INCREMENT,
+nome_escola VARCHAR (60) NOT NULL
+);
+
+CREATE TABLE usuarios(
+id_usuario INT PRIMARY KEY AUTO_INCREMENT,
+nome_usuario VARCHAR(100) NOT NULL,
+nickname_usuario VARCHAR(35) NOT NULL,
+email_usuario VARCHAR(80) NOT NULL,
+senha_usuario VARCHAR(512) NOT NULL,
+serie_usuario ENUM ('1º série','2º série','3º série','4º série','5º série','6º série','7º série','8º série','9º série','1º série ensino médio','2º série ensino médio','3º série ensino médio','4º série ensino médio', 'Não sou estudante'),
+genero_usuario ENUM('Masculino', 'Feminino', 'Outro', 'Prefiro não informar') NOT NULL,
+data_nasc_usuario DATE NOT NULL,
+data_cadastro_usuario timestamp default current_timestamp,
+avatar_usuario INT NOT NULL,
+fk_escola INT,
+fk_endereco INT NOT NULL,
+FOREIGN KEY (fk_escola ) REFERENCES escolas(id_escola ),
+FOREIGN KEY (fk_endereco ) REFERENCES enderecos(id_endereco )
+);
+
+CREATE TABLE progressos(
+id_progresso INT PRIMARY KEY AUTO_INCREMENT,
+progresso_episodio DOUBLE NOT NULL,
+fk_episodio INT NOT NULL,
+fk_usuario INT NOT NULL,
+FOREIGN KEY (fk_episodio ) REFERENCES episodios(id_episodio ),
+FOREIGN KEY (fk_usuario ) REFERENCES usuarios(id_usuario )
+);
+
+CREATE TABLE conquistas_usuario(
+id_conquista_usuario INT PRIMARY KEY AUTO_INCREMENT,
+fk_conquista INT NOT NULL,
+fk_usuario INT NOT NULL,
+FOREIGN KEY (fk_conquista ) REFERENCES conquistas(id_conquista ),
+FOREIGN KEY (fk_usuario ) REFERENCES usuarios(id_usuario )
+);
+INSERT INTO enderecos (cep_endereco) VALUES (12312312);
+INSERT INTO escolas (nome_escola) VALUES ('SESI SENAI ESCOLA DE REFERÊNCIA - JOINVILLE');
